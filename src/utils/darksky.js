@@ -30,7 +30,8 @@ const darksky = (long, lat, callback) => {
             callback(res.body.error, undefined);
         } else {
             const data = res.body.currently;
-            callback(undefined, `It's ${data.temperature} degrees out. There is a ${data.precipProbability}% chance to rain`)
+            const feedback = `It's ${data.temperature} degrees out. There is a ${data.precipProbability}% chance to rain`;
+            callback(undefined, feedback)
         }
     })
 
