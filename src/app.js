@@ -27,15 +27,15 @@ app.get('', (req, res) => {
     })
 })
 
-app.get('/help', (req, res) => {
-    res.render('help', {
-        title: 'help'
+app.get('/contact', (req, res) => {
+    res.render('contact', {
+        title: 'Contact'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'about'
+        title: 'About'
     })
 })
 
