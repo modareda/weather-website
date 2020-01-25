@@ -23,21 +23,20 @@ app.use(express.static(publicFolder))
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Weather app',
-        name: 'Mahmoud',
-        data: {
-            forecast: 'snowing',
-            location: 'Cairo'
-        }
+        title: 'Weather',
     })
 })
 
 app.get('/help', (req, res) => {
-    res.render('help')
+    res.render('help', {
+        title: 'help'
+    })
 })
 
 app.get('/about', (req, res) => {
-    res.render('about')
+    res.render('about', {
+        title: 'about'
+    })
 })
 
 app.get('/weather', (req, res) => {
