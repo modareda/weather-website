@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode')
 const darksky = require('./utils/darksky')
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Define Path for Express
 const publicFolder = path.join(__dirname, '../public')
